@@ -3,7 +3,7 @@ public class Main {
         int intNum = 300000000;
         byte byteNum = 120;
         short shortNum = 30000;
-        long longNum = 300000000;
+        long longNum = 300000000000L;
         float floatNum = 1.1f;
         double doubleNum = 1.1231343423323;
 
@@ -14,12 +14,20 @@ public class Main {
         System.out.println("Значение переменной floatNum с типом float равно " + floatNum);
         System.out.println("Значение переменной doubleNum с типом doubl равно " + doubleNum);
         float numOne = 27.12f;
-        long numTwo = 987675549;
+        long numTwo = 987675549L;
         double numThree = 2.786;
         short numFour = 569;
         short numFife = -159;
         short numSix = 27897;
         byte numSeven = 67;
+        System.out.println(numOne);
+        System.out.println(numTwo);
+        System.out.println(numThree);
+        System.out.println(numFour);
+        System.out.println(numFife);
+        System.out.println(numSix);
+        System.out.println(numSeven);
+
 
         int studentOne = 27;
         int studentTwo = 23;
@@ -47,8 +55,8 @@ public class Main {
         int allColors = 120;
         int whiteColorOnOneClass = 2;
         int brounColorOnOneClass = 4;
-        int Classes = allColors / (whiteColorOnOneClass + brounColorOnOneClass);
-        System.out.println("В школе, где "+ (Classes) +" классов, нужно "+(Classes * whiteColorOnOneClass)+" банок белой краски и "+(Classes * brounColorOnOneClass)+" банок коричневой краски");
+        int classes = allColors / (whiteColorOnOneClass + brounColorOnOneClass);
+        System.out.println("В школе, где " + (classes) + " классов, нужно " + (classes * whiteColorOnOneClass) + " банок белой краски и " + (classes * brounColorOnOneClass) + " банок коричневой краски");
 
 
         int countBananas = 5;
@@ -56,7 +64,7 @@ public class Main {
         int countIceCream = 2;
         int countEgg = 4;
         int totalMass = countBananas * 80 + countMilk / 100 * 105 + countIceCream * 100 + countEgg * 70;
-        System.out.println(totalMass / 1000);
+        System.out.println(" " + totalMass + "г " + (totalMass / 1000) + "кг");
 
 
         int weightToLose = 7 * 1000;
