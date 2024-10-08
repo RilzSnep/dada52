@@ -1,70 +1,66 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
-        int clientOS = 0;
-        int clientDeviceYear = 2009;
-
-        if (clientDeviceYear < 2015 && clientOS == 0) {
-            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        } else if (clientOS == 0) {
-            System.out.println("Установите версию приложения для iOS по ссылке");
-        } else if (clientDeviceYear < 2015 && clientOS == 1) {
-            System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        } else {
-            System.out.println("Установите версию приложения для Android по ссылке");
+        int[] array1 = new int[]{1, 2, 3};
+        double[] array2 = {1.57d, 7.654d, 9.986d};
+        int[] array3 = {52, 52, 52};
+        for (int i = 0; i <= array1.length - 1; i++) {
+            if (i != array2.length - 1) {
+                System.out.print(array1[i] + ", ");
+            } else {
+                System.out.println(array1[i]);
+            }
         }
-
-
-        int year = 2000;
-        if (year >= 1584 && year % 4 == 0 && year % 100 != 0) {
-            System.out.println(year + " год является високосным");
-        } else {
-            System.out.println(year + " год не является високосным");
+        for (int i = 0; i <= array2.length - 1; i++) {
+            if (i != array2.length - 1) {
+                System.out.print(array2[i] + ", ");
+            } else {
+                System.out.println(array2[i]);
+            }
         }
-
-
-        int deliveryDistance = 95;
-        int days = 0;
-        boolean deliveryAvailable = true;
-        if (deliveryDistance < 20) {
-            days = 1;
-        } else if (deliveryDistance >= 20 && deliveryDistance < 60) {
-            days = 2;
-        } else if (deliveryDistance >= 60 && deliveryDistance < 100) {
-            days = 3;
-        } else {
-            deliveryAvailable = false;
+        for (int i = 0; i <= array3.length - 1; i++) {
+            if (i != array2.length - 1) {
+                System.out.print(array3[i] + ", ");
+            } else {
+                System.out.println(array3[i]);
+            }
         }
+        System.out.println(" ");
 
-        if (deliveryAvailable) {
-            System.out.println("Потребуется дней: " + days);
-        } else {
-            System.out.println("Доставки нет");
+
+        for (int i = array1.length - 1; i >= 0; i--) {
+            if (i != 0) {
+                System.out.print(array1[i] + ", ");
+            } else {
+                System.out.println(array1[i]);
+            }
         }
-
-
-        int monthNumber = 12;
-        switch (monthNumber) {
-            case 12:
-            case 1:
-            case 2:
-                System.out.println("Зима");
-                break;
-            case 3:
-            case 4:
-            case 5:
-                System.out.println("Весна");
-                break;
-            case 6:
-            case 7:
-            case 8:
-                System.out.println("Лето");
-                break;
-            case 9:
-            case 10:
-            case 11:
-                System.out.println("Осень");
-                break;
+        for (int i = array2.length - 1; i >= 0; i--) {
+            if (i != 0) {
+                System.out.print(array2[i] + ", ");
+            } else {
+                System.out.println(array2[i]);
+            }
         }
+        for (int i = array3.length - 1; i >= 0; i--) {
+            if (i != 0) {
+                System.out.print(array3[i] + ", ");
+            } else {
+                System.out.println(array3[i]);
+            }
+        }
+        System.out.println(" ");
+
+
+        for (int i = 0; i <= array1.length - 1; i++) {
+            if (array1[i] % 2 == 1) {
+                array1[i] = array1[i] + 1;
+
+            }
+        }
+        System.out.println(Arrays.toString(array1));
+
 
     }
 }
