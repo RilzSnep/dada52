@@ -29,15 +29,13 @@ public class Book {
         return author.toString() + ", написал книгу " + this.name + ", " + this.age + " лет назад.";
     }
 
+
     public boolean equals(Book other) {
-        if (this.age == other.age) {
-            return true;
-        } else {
-            return false;
-        }
+        return this.name.equals(other.getName()) && this.age == other.getAge();
     }
+
     @Override
     public int hashCode() {
-        return java.util.Objects.hash(name);
+        return super.hashCode();
     }
 }
