@@ -23,7 +23,7 @@ public class Author {
         return this.name.equals(author.getName()) && this.surname.equals(author.getSurname());
     }
 
-    public int hashCode() {
-        return super.hashCode();
+    public int hashCod() {
+        return this.hashCode();
     }
 }

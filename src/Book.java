@@ -34,8 +34,7 @@ public class Book {
         return this.name.equals(other.getName()) && this.age == other.getAge();
     }
 
-    @Override
-    public int hashCode() {
-        return super.hashCode();
+    public int hashCod() {
+        return this.hashCode();
     }
 }
