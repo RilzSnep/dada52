@@ -35,7 +35,7 @@ public class slizerin extends hogwarts{
     }
     public static void comparisonSlizerinStudentPower(slizerin firstStudent, slizerin secondStudent) {
         int totalFirst = firstStudent.cunning + firstStudent.determination + firstStudent.ambition + firstStudent.resourcefulness + firstStudent.lustForPower;
-        int totalSecond = secondStudent.cunning + secondStudent.determination + secondStudent.ambition + firstStudent.resourcefulness + firstStudent.lustForPower;
+        int totalSecond = secondStudent.cunning + secondStudent.determination + secondStudent.ambition + secondStudent.resourcefulness + secondStudent.lustForPower;
         if (totalSecond > totalFirst) {
             System.out.println(secondStudent.getFullName() + " лучший Слизеринец, чем " + firstStudent.getFullName());
         } else if (totalSecond < totalFirst) {
