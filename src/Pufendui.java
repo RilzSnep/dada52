@@ -1,9 +1,9 @@
-public class pufendui extends hogwarts {
+public class Pufendui extends Hogwarts {
     private int hardworking;
     private int loyal;
     private int honest;
 
-    public pufendui(String fullName, int magicPower, int transgress, int hardworking, int loyal, int honest) {
+    public Pufendui(String fullName, int magicPower, int transgress, int hardworking, int loyal, int honest) {
         super(fullName, magicPower, transgress);
         this.hardworking = hardworking;
         this.loyal = loyal;
@@ -22,7 +22,7 @@ public class pufendui extends hogwarts {
         return honest;
     }
 
-    public static void comparisonPufenduiStudentPower(pufendui firstStudent, pufendui secondStudent){
+    public static void comparisonPufenduiStudentPower(Pufendui firstStudent, Pufendui secondStudent){
         int totalFirst = firstStudent.hardworking + firstStudent.loyal + firstStudent.honest;
         int totalSecond = secondStudent.hardworking + secondStudent.loyal + secondStudent.honest;
         if (totalSecond > totalFirst){
@@ -32,5 +32,11 @@ public class pufendui extends hogwarts {
         } else {
             System.out.println("Силы Пуфендуйцев равны");
         }
+    }
+    public static void describeStudent(Hogwarts Student) {
+        Pufendui students = (Pufendui) Student;
+        System.out.println("У студента " + students.getFullName() + " " + students.getMagicPower()
+                + " магической силы и " + students.getTransgress() + " расстояние трансгресии и " + " трудолюбивы, верны, честны " +
+                students.getHardworking() + ", " + students.getLoyal() + ", " + students.getHonest());
     }
 }

@@ -1,9 +1,9 @@
-public class griffendor extends hogwarts {
+public class Griffendor extends Hogwarts {
     private int nobility;
     private int honor;
     private int courage;
 
-    public griffendor(String fullName, int magicPower, int transgress, int nobility, int honor, int courage) {
+    public Griffendor(String fullName, int magicPower, int transgress, int nobility, int honor, int courage) {
         super(fullName, magicPower, transgress);
         this.nobility = nobility;
         this.honor = honor;
@@ -21,7 +21,7 @@ public class griffendor extends hogwarts {
     public int getCourage() {
         return courage;
     }
-    public static void comparisonGriffendorStudentPower(griffendor firstStudent, griffendor secondStudent){
+    public static void comparisonGriffendorStudentPower(Griffendor firstStudent, Griffendor secondStudent){
         int totalFirst = firstStudent.nobility + firstStudent.honor + firstStudent.courage;
         int totalSecond = secondStudent.nobility + secondStudent.honor + secondStudent.courage;
         if (totalSecond > totalFirst){
@@ -31,5 +31,11 @@ public class griffendor extends hogwarts {
         } else {
             System.out.println("Силы гриффендорцев равны");
         }
+    }
+    public static void describeStudent(Hogwarts Student) {
+        Griffendor student = (Griffendor) Student;
+        System.out.println("У студента " + student.getFullName() + " " + student.getMagicPower()
+                + " магической силы и " + student.getTransgress() + " расстояние трансгресии и" + " столько благородства, чести и храбрости " +
+                student.getHonor() + ", " + student.getCourage() + ", " + student.getNobility());
     }
 }
