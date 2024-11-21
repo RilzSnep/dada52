@@ -32,7 +32,7 @@ public class Griffendor extends Hogwarts {
             System.out.println("Силы гриффендорцев равны");
         }
     }
-    public static void describeStudent(Hogwarts Student) {
+    public static void describeStudent(Griffendor Student) {
         Griffendor student = (Griffendor) Student;
         System.out.println("У студента " + student.getFullName() + " " + student.getMagicPower()
                 + " магической силы и " + student.getTransgress() + " расстояние трансгресии и" + " столько благородства, чести и храбрости " +

@@ -44,7 +44,7 @@ public class Slizerin extends Hogwarts {
             System.out.println("Силы Слизеринцев равны");
         }
     }
-    public static void describeStudent(Hogwarts Student) {
+    public static void describeStudent(Slizerin Student) {
         Slizerin students = (Slizerin) Student;
         System.out.println("У студента " + students.getFullName() + " " + students.getMagicPower()
                 + " магической силы и " + students.getTransgress() + " расстояние трансгресии и " + " хитрость, решительность, амбициозность, находчивость и жажда власти " +

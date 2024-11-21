@@ -33,7 +33,7 @@ public class Pufendui extends Hogwarts {
             System.out.println("Силы Пуфендуйцев равны");
         }
     }
-    public static void describeStudent(Hogwarts Student) {
+    public static void describeStudent(Pufendui Student) {
         Pufendui students = (Pufendui) Student;
         System.out.println("У студента " + students.getFullName() + " " + students.getMagicPower()
                 + " магической силы и " + students.getTransgress() + " расстояние трансгресии и " + " трудолюбивы, верны, честны " +

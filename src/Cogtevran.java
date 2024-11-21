@@ -38,7 +38,7 @@ public class Cogtevran extends Hogwarts {
             System.out.println("Силы Когтевранцев равны");
         }
     }
-    public static void describeStudent(Hogwarts Student) {
+    public static void describeStudent(Cogtevran Student) {
         Cogtevran students = (Cogtevran) Student;
         System.out.println("У студента " + students.getFullName() + " " + students.getMagicPower()
                 + " магической силы и " + students.getTransgress() + " расстояние трансгресии и " + " умны, мудры, остроумны и полны творчества " +
