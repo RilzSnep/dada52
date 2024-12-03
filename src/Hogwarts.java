@@ -1,49 +1,49 @@
 public class Hogwarts {
     private String fullName;
-    private int magicPower;
-    private int transgress;
+    private int magicPower; // Attribute for student's magical power
+    private int transgress; // Attribute for student's transgression distance
 
+    // Constructor for Hogwarts student
     public Hogwarts(String fullName, int magicPower, int transgress) {
         this.fullName = fullName;
         this.magicPower = magicPower;
         this.transgress = transgress;
     }
 
+    // Getter for name
     public String getFullName() {
         return fullName;
     }
-
+    //Getter for magic power
     public int getMagicPower() {
         return magicPower;
     }
-
+    //Getter for magic Transgress
     public int getTransgress() {
         return transgress;
     }
-    public static void comparisonStudentsMagicPower(Hogwarts firstStudent, Hogwarts secobdStudent){
-        if (firstStudent.magicPower + firstStudent.transgress > secobdStudent.magicPower + secobdStudent.transgress){
-            System.out.println(firstStudent.fullName + " сильнее " + secobdStudent.fullName + " в магической силе");
-        } else if (firstStudent.magicPower + firstStudent.transgress < secobdStudent.magicPower + secobdStudent.transgress){
-            System.out.println(secobdStudent.fullName + " сильнее " + firstStudent.fullName + " в магической силе");
+
+
+    public static void comparisonStudentsMagicPower(Hogwarts firstStudent, Hogwarts secobdStudent) { // Note: small typo in 'secondStudent'
+        if (firstStudent.magicPower + firstStudent.transgress > secobdStudent.magicPower + secobdStudent.transgress) {
+            System.out.println(firstStudent.fullName + " is stronger than " + secobdStudent.fullName + " in magical power.");
+        } else if (firstStudent.magicPower + firstStudent.transgress < secobdStudent.magicPower + secobdStudent.transgress) {
+            System.out.println(secobdStudent.fullName + " is stronger than " + firstStudent.fullName + " in magical power.");
         } else {
-            System.out.println("Магические силы студентов равны");
+            System.out.println("Both students have equal magical power.");
         }
     }
+
+
     public static void describeStudent(Hogwarts Student) {
         if (Student instanceof Griffendor) {
-            Griffendor student = (Griffendor) Student;
-            Griffendor.describeStudent(student);
+            Griffendor.describeStudent((Griffendor) Student);
         } else if (Student instanceof Pufendui) {
-            Pufendui students = (Pufendui) Student;
-            Pufendui.describeStudent(students);
+            Pufendui.describeStudent((Pufendui) Student);
         } else if (Student instanceof Cogtevran) {
-            Cogtevran students = (Cogtevran) Student;
-            Cogtevran.describeStudent(students);
+            Cogtevran.describeStudent((Cogtevran) Student);
         } else if (Student instanceof Slizerin) {
-            Slizerin students = (Slizerin) Student;
-            Slizerin.describeStudent(students);
+            Slizerin.describeStudent((Slizerin) Student);
         }
     }
-
-
 }

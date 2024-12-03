@@ -1,8 +1,9 @@
 public class Pufendui extends Hogwarts {
-    private int hardworking;
-    private int loyal;
-    private int honest;
+    private int hardworking;  // Attribute for student hard work
+    private int loyal; // Attribute for student loyalty
+    private int honest;// Attribute for student honesty
 
+    // Constructor for Pufendui students
     public Pufendui(String fullName, int magicPower, int transgress, int hardworking, int loyal, int honest) {
         super(fullName, magicPower, transgress);
         this.hardworking = hardworking;
@@ -10,33 +11,34 @@ public class Pufendui extends Hogwarts {
         this.honest = honest;
     }
 
+    // Getter Hardworking
     public int getHardworking() {
         return hardworking;
     }
-
+    // Getter Loyal
     public int getLoyal() {
         return loyal;
     }
-
+    // Getter Honest
     public int getHonest() {
         return honest;
     }
 
-    public static void comparisonPufenduiStudentPower(Pufendui firstStudent, Pufendui secondStudent){
+    public static void comparisonPufenduiStudentPower(Pufendui firstStudent, Pufendui secondStudent) {
         int totalFirst = firstStudent.hardworking + firstStudent.loyal + firstStudent.honest;
         int totalSecond = secondStudent.hardworking + secondStudent.loyal + secondStudent.honest;
-        if (totalSecond > totalFirst){
-            System.out.println(secondStudent.getFullName() + " лучший Пуфендуец, чем " + firstStudent.getFullName());
-        } else if (totalSecond < totalFirst){
-            System.out.println(firstStudent.getFullName() + " лучший Пуфендуец, чем " + secondStudent.getFullName());
+        if (totalSecond > totalFirst) {
+            System.out.println(secondStudent.getFullName() + " is a better Hufflepuff than " + firstStudent.getFullName());
+        } else if (totalSecond < totalFirst) {
+            System.out.println(firstStudent.getFullName() + " is a better Hufflepuff than " + secondStudent.getFullName());
         } else {
-            System.out.println("Силы Пуфендуйцев равны");
+            System.out.println("Both Hufflepuff students are equally strong.");
         }
     }
+
     public static void describeStudent(Pufendui Student) {
-        Pufendui students = (Pufendui) Student;
-        System.out.println("У студента " + students.getFullName() + " " + students.getMagicPower()
-                + " магической силы и " + students.getTransgress() + " расстояние трансгресии и " + " трудолюбивы, верны, честны " +
-                students.getHardworking() + ", " + students.getLoyal() + ", " + students.getHonest());
+        System.out.println("The student " + Student.getFullName() + " has " + Student.getMagicPower()
+                + " magical power, " + Student.getTransgress() + " transgression distance, and traits of hardworking, loyalty, and honesty: "
+                + Student.getHardworking() + ", " + Student.getLoyal() + ", " + Student.getHonest());
     }
 }
